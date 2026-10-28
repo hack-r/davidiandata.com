@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Davidian Data — Waco / Branch Davidian directory</title>
+  <meta name="description" content="A directory of Waco / Branch Davidian resources: government reports, archives, journalism, films, and open data.">
+  <link rel="canonical" href="https://davidiandata.com/">
+  <link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48 64x64 256x256" type="image/vnd.microsoft.icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Davidian Data",
+    "url": "https://davidiandata.com/",
+    "description": "A directory of Waco / Branch Davidian resources, documents, archives, and open data."
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --panel: #111827;
+      --border: #1f2937;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #d4a054;
+      --accent-soft: rgba(212, 160, 84, 0.12);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --panel: #ffffff;
+        --border: #e2e8f0;
+        --text: #1e293b;
+        --muted: #64748b;
+        --accent: #9a6b1f;
+        --accent-soft: rgba(154, 107, 31, 0.1);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header.site {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #000;
+      border-bottom: 1px solid #1f2937;
+    }
+    .header-inner {
+      max-width: 72rem;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.75rem 1rem;
+    }
+    @media (min-width: 640px) { .header-inner { padding: 0.75rem 1.5rem; } }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: #d1d5db;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    .brand img { height: 2.5rem; width: auto; }
+    .search-wrap { flex: 1 1 16rem; max-width: 28rem; margin-left: auto; }
+    .search-wrap input {
+      width: 100%;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.5rem;
+      border: 1px solid #374151;
+      background: #111827;
+      color: #e5e7eb;
+      font-size: 0.9rem;
+      outline: none;
+    }
+    .search-wrap input:focus { border-color: var(--accent); }
+    main { max-width: 72rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+    @media (min-width: 640px) { main { padding: 2rem 1.5rem 4rem; } }
+    .hero { margin-bottom: 2.5rem; }
+    .hero h1 { font-size: 1.9rem; margin: 0 0 0.5rem; letter-spacing: -0.02em; }
+    .hero p { color: var(--muted); margin: 0; max-width: 46rem; }
+    .stats { color: var(--muted); font-size: 0.85rem; margin-top: 0.75rem; }
+    .category { margin-bottom: 2.5rem; }
+    .category h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.25rem;
+      letter-spacing: -0.01em;
+    }
+    .category h2 .count { color: var(--accent); font-weight: 500; font-size: 0.95rem; }
+    .category .desc { color: var(--muted); font-size: 0.875rem; margin: 0 0 1rem; }
+    ul.entries {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+      gap: 0.75rem;
+    }
+    ul.entries li {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 0.75rem 1rem;
+      transition: border-color 0.15s ease;
+    }
+    ul.entries li:hover { border-color: var(--accent); }
+    ul.entries a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      display: block;
+    }
+    ul.entries a:hover { color: var(--accent); }
+    .entry-host {
+      color: var(--muted);
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
+      word-break: break-all;
+    }
+    .entry-tags { margin-top: 0.4rem; display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .tag {
+      font-size: 0.68rem;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border-radius: 999px;
+      padding: 0.05rem 0.5rem;
+    }
+    .empty {
+      display: none;
+      color: var(--muted);
+      padding: 2rem 0;
+      text-align: center;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.8rem;
+      text-align: center;
+      padding: 1.25rem 1rem 2rem;
+    }
+    footer a { color: var(--muted); }
+    .noscript { padding: 2rem 0; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="header-inner">
+      <a class="brand" href="/">
+        <img src="/thebranch.png" alt="The Branch logo">
+        <span>Davidian Data</span>
+      </a>
+      <div class="search-wrap">
+        <input id="search" type="search" placeholder="Search the directory..." aria-label="Search the directory" autocomplete="off">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Waco / Branch Davidian Resource Directory</h1>
+      <p>
+        A curated directory of documents, government reports, archives, journalism,
+        films, and community resources about the Branch Davidians and the Waco siege.
+        No chatbots &mdash; just data, links, and sources.
+      </p>
+      <p class="stats" id="stats"></p>
+    </section>
+    <div id="directory"></div>
+    <p class="empty" id="empty">No entries match that search.</p>
+    <noscript>
+      <p class="noscript">
+        The directory is rendered from <a href="/data/directory.json">data/directory.json</a>.
+        Enable JavaScript to browse it, or read the JSON directly.
+      </p>
+    </noscript>
+  </main>
+
+  <footer>
+    <p>
+      Directory data: <a href="/data/directory.json">data/directory.json</a> &middot;
+      Source and issue tracker live on GitHub.
+      Migrated from aikoresh.com, which now 301-redirects here.
+    </p>
+  </footer>
+
+  <script>
+    const esc = (s) =>
+      String(s).replace(/[&<>"']/g, (c) =>
+        ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+    const hostOf = (url) => {
+      try { return new URL(url).hostname.replace(/^www\./, ""); }
+      catch { return url; }
+    };
+
+    let entries = [];
+
+    const render = (data, query) => {
+      const q = query.trim().toLowerCase();
+      const container = document.getElementById("directory");
+      container.innerHTML = "";
+      let shown = 0;
+
+      for (const cat of data.categories) {
+        const matched = cat.entries.filter((e) => {
+          if (!q) return true;
+          const hay = (e.title + " " + e.url + " " + (e.tags || []).join(" ") + " " + cat.name).toLowerCase();
+          return hay.includes(q);
+        });
+        if (matched.length === 0) continue;
+        shown += matched.length;
+
+        const section = document.createElement("section");
+        section.className = "category";
+        section.innerHTML =
+          "<h2>" + esc(cat.name) + ' <span class="count">(' + matched.length + ")</span></h2>" +
+          (cat.description ? '<p class="desc">' + esc(cat.description) + "</p>" : "") +
+          '<ul class="entries">' +
+          matched.map((e) =>
+            "<li><a href=\"" + esc(e.url) + "\" target=\"_blank\" rel=\"noreferrer noopener\">" +
+            esc(e.title) + "</a>" +
+            '<div class="entry-host">' + esc(hostOf(e.url)) + "</div>" +
+            ((e.tags || []).length
+              ? '<div class="entry-tags">' + e.tags.map((t) => '<span class="tag">' + esc(t) + "</span>").join("") + "</div>"
+              : "") +
+            "</li>"
+          ).join("") +
+          "</ul>";
+        container.appendChild(section);
+      }
+
+      document.getElementById("empty").style.display = shown === 0 ? "block" : "none";
+      document.getElementById("stats").textContent = q
+        ? "Showing " + shown + " of " + entries.length + " entries."
+        : entries.length + " entries across " + data.categories.length + " categories.";
+    };
+
+    fetch("/data/directory.json")
+      .then((r) => {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then((data) => {
+        entries = data.categories.flatMap((c) => c.entries);
+        render(data, "");
+        const input = document.getElementById("search");
+        input.addEventListener("input", () => render(data, input.value));
+      })
+      .catch((err) => {
+        document.getElementById("directory").innerHTML =
+          '<p class="noscript">Failed to load directory data: ' + esc(err.message) + "</p>";
+      });
+  </script>
+</body>
+</html>
