@@ -112,6 +112,9 @@
       gap: 0.75rem;
     }
     ul.entries li {
+      display: flex;
+      gap: 0.65rem;
+      align-items: flex-start;
       background: var(--panel);
       border: 1px solid var(--border);
       border-radius: 0.75rem;
@@ -119,6 +122,24 @@
       transition: border-color 0.15s ease;
     }
     ul.entries li:hover { border-color: var(--accent); }
+    .entry-icon {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-top: 0.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.05rem;
+      line-height: 1;
+    }
+    .entry-icon img {
+      width: 1.25rem;
+      height: 1.25rem;
+      border-radius: 0.25rem;
+      object-fit: contain;
+    }
+    .entry-body { min-width: 0; }
     ul.entries a {
       color: var(--text);
       text-decoration: none;
@@ -208,6 +229,23 @@
       catch { return url; }
     };
 
+    const faviconUrl = (host) =>
+      "https://www.google.com/s2/favicons?sz=64&domain=" + encodeURIComponent(host);
+
+    // Emoji used when a favicon can't be loaded (per category).
+    const CATEGORY_EMOJI = {
+      "featured": "\u2B50",
+      "reports-investigations": "\uD83D\uDCC4",
+      "archives-collections": "\uD83D\uDCDA",
+      "encyclopedias-reference": "\uD83D\uDCD6",
+      "news-journalism": "\uD83D\uDCF0",
+      "film-tv": "\uD83C\uDFAC",
+      "video-audio": "\uD83D\uDCFA",
+      "books": "\uD83D\uDCD5",
+      "community": "\uD83D\uDC65",
+      "related": "\uD83D\uDD17"
+    };
+
     let entries = [];
 
     const render = (data, query) => {
@@ -232,16 +270,23 @@
           (cat.description ? '<p class="desc">' + esc(cat.description) + "</p>" : "") +
           '<ul class="entries">' +
           matched.map((e) =>
-            "<li><a href=\"" + esc(e.url) + "\" target=\"_blank\" rel=\"noreferrer noopener\">" +
+            '<li><span class="entry-icon" data-emoji="' +
+              (CATEGORY_EMOJI[cat.id] || "\uD83D\uDD17") + '">' +
+              '<img src="' + esc(faviconUrl(hostOf(e.url))) + '" alt="" loading="lazy">' +
+            "</span>" +
+            '<span class="entry-body"><a href="' + esc(e.url) + '" target="_blank" rel="noreferrer noopener">' +
             esc(e.title) + "</a>" +
-            '<div class="entry-host">' + esc(hostOf(e.url)) + "</div>" +
-            ((e.tags || []).length
-              ? '<div class="entry-tags">' + e.tags.map((t) => '<span class="tag">' + esc(t) + "</span>").join("") + "</div>"
-              : "") +
+            '<span class="entry-host">' + esc(hostOf(e.url)) + "</span></span>" +
             "</li>"
           ).join("") +
           "</ul>";
         container.appendChild(section);
+        section.querySelectorAll("img").forEach((img) => {
+          img.addEventListener("error", () => {
+            const span = img.parentElement;
+            span.textContent = span.dataset.emoji || "\uD83D\uDD17";
+          });
+        });
       }
 
       document.getElementById("empty").style.display = shown === 0 ? "block" : "none";

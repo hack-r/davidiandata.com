@@ -1,0 +1,291 @@
+{
+  "site": "davidiandata.com",
+  "description": "The directory component of the former AI David Koresh site (aikoresh.com).",
+  "source_note": "Migrated from aikoresh.com (aidavidkoresh). AI/chat components removed; directory only.",
+  "categories": [
+    {
+      "id": "featured",
+      "name": "Featured",
+      "entries": [
+        {
+          "title": "Donate",
+          "url": "https://www.gofundme.com/f/ai-david-koresh/cl/s?utm_campaign=fp_sharesheet&utm_content=amp17_ta-amp20_t2&utm_medium=customer&utm_source=copy_link&lang=en_US&attribution_id=sl%3Aeca8201a-5d60-4bd3-b4f8-3ea1e66c0b62&ts=1771985982"
+        },
+        {
+          "title": "Waco Survivors by David T.",
+          "url": "https://www.wacosurvivors.com/"
+        }
+      ]
+    },
+    {
+      "id": "reports-investigations",
+      "name": "Reports & Investigations",
+      "entries": [
+        {
+          "title": "Army of Babylon",
+          "url": "https://www.atf.gov/our-history/remembering-waco"
+        },
+        {
+          "title": "Cato: No More Wacos",
+          "url": "https://www.cato.org/commentary/no-more-wacos-whats-wrong-federal-law-enforcement-how-fix-it"
+        },
+        {
+          "title": "Danforth Report",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Danforthreport-final.pdf"
+        },
+        {
+          "title": "DOJ: Appendix C",
+          "url": "https://www.justice.gov/archives/publications/waco/report-deputy-attorney-general-events-waco-texas-appendix-c-list-demands-davidians-during-standoff"
+        },
+        {
+          "title": "DOJ OIG FOIA",
+          "url": "https://oig.justice.gov/foia-reading-room"
+        },
+        {
+          "title": "DOJ: Waco Report",
+          "url": "https://www.justice.gov/archives/publications/waco/report-deputy-attorney-general-events-waco-texas-introduction"
+        },
+        {
+          "title": "House Report: Waco",
+          "url": "https://www.congress.gov/committee-report/106th-congress/house-report/1037/1"
+        }
+      ]
+    },
+    {
+      "id": "archives-collections",
+      "name": "Archives & Collections",
+      "entries": [
+        {
+          "title": "David Koresh's Sermons",
+          "url": "https://davidkoreshsermons.com"
+        },
+        {
+          "title": "Dick J. Reavis Papers",
+          "url": "https://archivesspace.library.txstate.edu/repositories/4/resources/319"
+        },
+        {
+          "title": "Lee Hancock Collection",
+          "url": "https://docs.gato.txst.edu/342949/Hancock_Lee_099.pdf"
+        },
+        {
+          "title": "Waco History",
+          "url": "https://wacohistory.org/"
+        }
+      ]
+    },
+    {
+      "id": "encyclopedias-reference",
+      "name": "Encyclopedias & Reference",
+      "entries": [
+        {
+          "title": "Biography.com",
+          "url": "https://www.biography.com/crime/david-koresh"
+        },
+        {
+          "title": "Branch Davidians Wiki",
+          "url": "https://en.wikipedia.org/wiki/Branch_Davidians"
+        },
+        {
+          "title": "Britannica: Branch Davidian",
+          "url": "https://www.britannica.com/topic/Branch-Davidian"
+        },
+        {
+          "title": "CS Gas",
+          "url": "https://en.wikipedia.org/wiki/CS_gas"
+        },
+        {
+          "title": "David Koresh Wiki",
+          "url": "https://en.wikipedia.org/wiki/David_Koresh"
+        },
+        {
+          "title": "INFORM: Branch Davidians",
+          "url": "https://inform.ac/branch-davidians/"
+        },
+        {
+          "title": "Mount Carmel Wiki",
+          "url": "https://en.wikipedia.org/wiki/Mount_Carmel_Center"
+        },
+        {
+          "title": "TSHA: Davidians and Branch Davidians",
+          "url": "https://www.tshaonline.org/handbook/entries/davidians-and-branch-davidians"
+        },
+        {
+          "title": "Waco Siege Wiki",
+          "url": "https://en.wikipedia.org/wiki/Waco_siege"
+        },
+        {
+          "title": "Waco: The Rules of Engagement",
+          "url": "https://en.wikipedia.org/wiki/Waco:_The_Rules_of_Engagement"
+        },
+        {
+          "title": "Why Waco?",
+          "url": "https://en.wikipedia.org/wiki/Why_Waco%3F"
+        }
+      ]
+    },
+    {
+      "id": "news-journalism",
+      "name": "News & Journalism",
+      "entries": [
+        {
+          "title": "Cult Psychology",
+          "url": "https://gettherapybirmingham.com/the-cult-psychology-of-the-branch-davidians/"
+        },
+        {
+          "title": "History Collection",
+          "url": "https://historycollection.com/waco-the-51-day-siege-that-ended-in-fire-and-fury/"
+        },
+        {
+          "title": "LA Times: Cult Children",
+          "url": "https://www.latimes.com/archives/la-xpm-1993-05-05-mn-31528-story.html"
+        },
+        {
+          "title": "LA Times: Reno",
+          "url": "https://www.latimes.com/archives/la-xpm-1995-08-02-mn-30642-story.html"
+        },
+        {
+          "title": "NPR: Guinn Interview",
+          "url": "https://www.npr.org/2023/01/25/1151283229/waco-branch-davidian-david-koresh-jeff-guinn"
+        },
+        {
+          "title": "NPR: Still Believe",
+          "url": "https://www.npr.org/2013/04/20/178063471/two-decades-later-some-branch-davidians-still-believe"
+        },
+        {
+          "title": "PBS Frontline: Timeline",
+          "url": "https://www.pbs.org/wgbh/pages/frontline/waco/timeline.html"
+        }
+      ]
+    },
+    {
+      "id": "film-tv",
+      "name": "Film & TV",
+      "entries": [
+        {
+          "title": "48 Hours (CBS) Episode",
+          "url": "https://www.cbs.com/shows/video/ZucLDOc88GgZH7G3Qr9mTbFbbZ2_bRLN/"
+        },
+        {
+          "title": "Netflix \"American Apocalypse\"",
+          "url": "https://www.netflix.com/title/81396979"
+        },
+        {
+          "title": "Paramount+ \"WACO\"",
+          "url": "https://www.paramountnetwork.com/shows/waco"
+        },
+        {
+          "title": "PBS \"Waco: The Inside Story\"",
+          "url": "https://archive.org/details/WacoTheInsideStory"
+        },
+        {
+          "title": "Showtime \"Aftermath\"",
+          "url": "https://www.imdb.com/title/tt17921674/"
+        },
+        {
+          "title": "Waco, The Big Lie",
+          "url": "https://www.imdb.com/title/tt3385784/"
+        },
+        {
+          "title": "Waco II, The Big Lie Continues",
+          "url": "https://www.imdb.com/title/tt3385806/"
+        }
+      ]
+    },
+    {
+      "id": "video-audio",
+      "name": "Video & Audio",
+      "entries": [
+        {
+          "title": "Survivors: 30th Anniversary",
+          "url": "https://www.youtube.com/watch?v=9uuBcTkbJRc"
+        },
+        {
+          "title": "The Final 24",
+          "url": "https://www.youtube.com/watch?v=65rUlirPCjI"
+        },
+        {
+          "title": "The FLIR Project",
+          "url": "https://www.youtube.com/watch?v=pOW6UbAVs8A"
+        },
+        {
+          "title": "Thibodeau on SiriusXM",
+          "url": "https://www.siriusxm.com/clips/clip/a9914a41-78d6-4402-8150-b8f14a44945b/8a22ba54-f4a9-442f-83ae-30bcb5cdbc6a"
+        },
+        {
+          "title": "Waco Siege Doc",
+          "url": "https://www.youtube.com/watch?v=OW4Pr0Fr1Ec"
+        }
+      ]
+    },
+    {
+      "id": "books",
+      "name": "Books",
+      "entries": [
+        {
+          "title": "Guinn: Waco (Goodreads)",
+          "url": "https://www.goodreads.com/book/show/61271824-waco"
+        },
+        {
+          "title": "Livingstone Fagan: A Door Opened in Heaven: Understanding the Revelation (Google Books)",
+          "url": "https://books.google.com/books/about/A_Door_Opened_in_Heaven.html?id=UYL7nwEACAAJ"
+        },
+        {
+          "title": "Livingstone Fagan: Mt. Carmel: The Unseen Reality (1994)",
+          "url": "https://cdm16086.contentdm.oclc.org/digital/collection/p9010coll4/id/271/"
+        },
+        {
+          "title": "Livingstone Fagan: Pre-Adamic Creation Explained: Seven Seals (Amazon)",
+          "url": "https://www.amazon.com/Pre-Adamic-Creation-Explained-SEVEN-SEALS/dp/B0CX8B2VMK"
+        },
+        {
+          "title": "Livingstone Fagan: The Gift of Immortality (Amazon)",
+          "url": "https://www.amazon.com/Gift-Immortality-Livingstone-Fagan/dp/1781486697"
+        },
+        {
+          "title": "Livingstone Fagan: Understanding WACO & Salvation (Amazon)",
+          "url": "https://www.amazon.com/Understanding-WACO-SALVATION-Livingstone-Fagan/dp/1786238489"
+        },
+        {
+          "title": "Livingstone Fagan: WACO What Comes Next! (Amazon)",
+          "url": "https://www.amazon.com/WACO-What-Comes-Livingstone-Fagan/dp/109256733X"
+        },
+        {
+          "title": "Thibodeau: Waco, A Survivor's Story (Goodreads)",
+          "url": "https://www.goodreads.com/work/editions/201954-a-place-called-waco-a-survivor-s-story"
+        }
+      ]
+    },
+    {
+      "id": "community",
+      "name": "Community",
+      "entries": [
+        {
+          "title": "Livingstone's FB",
+          "url": "https://www.facebook.com/people/Livingstone-Fagan/100009550941051/"
+        },
+        {
+          "title": "Seven Seals FB",
+          "url": "https://www.facebook.com/groups/287876025232500/"
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "name": "Related",
+      "entries": [
+        {
+          "title": "Mount Carmel",
+          "url": "https://www.roadsideamerica.com/tip/1308"
+        },
+        {
+          "title": "Prefer reason over faith?",
+          "url": "https://www.aynrand.org"
+        },
+        {
+          "title": "Ruby Ridge to Freedom",
+          "url": "https://rubyridgetofreedom.com/"
+        }
+      ]
+    }
+  ]
+}

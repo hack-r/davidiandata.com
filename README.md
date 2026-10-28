@@ -15,24 +15,27 @@ reposted.
   here.
 - Icons and web manifest at the repo root.
 
-## Directory categories
+## Directory sections
 
-Featured · Government Reports & Documents · Archives & Collections ·
-Encyclopedias & Reference · News & Journalism · Films & Media · Books ·
-Community · Related Sites
+The three sections from the original site, unchanged: Featured ·
+Other Resources · Xenophobes & Babylonians
 
-Entries carry `title`, `url`, and `tags`, so the same JSON can be loaded into
+Entries carry `title` and `url`, so the same JSON can be loaded into
 Notion or MongoDB without transformation (see "Export targets" below).
 
 ## Deploy (Cloudflare)
 
 The domain's zone is on Cloudflare. Two options:
 
-**Cloudflare Pages** (simplest): create a Pages project connected to this
-repo, or `npx wrangler pages deploy .` directly.
+**Workers Builds / wrangler**: `wrangler.jsonc` is at the repo root with a
+`previews` block (required or the build fails) and serves everything in
+`public/` as static assets — `npx wrangler deploy`.
+
+**Cloudflare Pages**: create a Pages project connected to this repo, or
+`npx wrangler pages deploy public`.
 
 - Build command: none
-- Output directory: /
+- Output directory: /public
 
 The site is fully static; `data/directory.json` is fetched client-side.
 
@@ -51,7 +54,7 @@ Bulk Redirect) on the aikoresh.com zone:
 The directory JSON is deliberately schema-friendly for:
 
 - **Notion** — one database, properties: `Title` (title), `URL` (url),
-  `Category` (select), `Tags` (multi-select).
+  `Category` (select).
 - **MongoDB** — one collection (`directory`), one document per entry, plus a
   category collection, or just insert `data/directory.json` as-is.
 
